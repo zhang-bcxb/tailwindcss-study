@@ -27,17 +27,15 @@ npx tailwindcss -i ./src/tailwind.css -o ./dist/output.css --watch
 
 - 尺寸说明
 
-```
-w-px	    width: 1px;
-w-0.5	    width: 0.125rem; /* 2px */
-w-1	      width: 0.25rem;  /* 4px */
-w-4	      width: 1rem;     /* 16px */
-w-1/2	    width: 50%;
-w-full	  width: 100%;
-w-screen	width: 100vw;
-
-总结：
-```
+| 类名称 | 解析                       |
+| ------ | -------------------------- |
+| w-px   | width: 1px;                |
+| w-0.5  | width: 0.125rem;【2px】     |
+| w-1    | width: 0.25rem; 【4px】     |
+| w-4    | width: 1rem;    【16px】    |
+| w-1/2  | width: 50%;                 |
+| w-full | width: 100%;                |
+| w-screen | width: 100vw;             |
 
 - 自定义样式
 
