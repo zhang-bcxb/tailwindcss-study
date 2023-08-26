@@ -1,3 +1,37 @@
 @tailwind base;
+
+/* 标签基础属性 */
+@layer base {
+  h1 {
+    height: 70px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+
 @tailwind components;
+
+/* 样式复用 */
+@layer components {
+  .item {
+    @apply mb-2 bg-white p-2 font-mono font-bold text-2xl;
+  }
+}
+
 @tailwind utilities;
+
+/* 原生 CSS 样式 */
+@layer utilities {
+  .item-li {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    /* 文字水平垂直居中 */
+    line-height: 50px;
+    text-align: center;
+    /* 文本样式 */
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
